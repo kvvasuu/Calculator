@@ -1,0 +1,303 @@
+:root {
+  --black: rgb(5, 5, 5);
+  --black-light: rgb(10, 10, 10);
+  --dark: rgb(56, 56, 56);
+  --orange: rgb(255, 139, 31);
+  --orange-light: rgb(255, 139, 0);
+  --grey-dark: rgb(134, 134, 134);
+  --grey: rgb(214, 214, 214);
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--black-light);
+  margin: 0;
+}
+
+.frame-outer {
+  background: radial-gradient(
+    circle,
+    rgb(44, 43, 41) 0%,
+    rgb(34, 34, 34) 90%,
+    rgb(36, 35, 34) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.9rem;
+  width: 27.26rem;
+  height: 53.4rem;
+  box-shadow: 0 0 20rem rgba(0, 173, 181, 1);
+  margin: 3rem auto;
+}
+
+.frame {
+  background: radial-gradient(
+    circle,
+    rgba(85, 83, 77, 1) 0%,
+    rgb(63, 63, 63) 90%,
+    rgba(85, 83, 77, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.8rem;
+  width: 27.08rem;
+  height: 53.26rem;
+}
+
+.side-button {
+  position: absolute;
+  top: 16rem;
+  right: -0.64rem;
+  background: linear-gradient(
+    0deg,
+    rgb(37, 37, 34) 0%,
+    rgb(77, 75, 70) 20%,
+    rgb(58, 56, 53) 49%,
+    rgb(65, 63, 59) 84%,
+    rgba(147, 144, 137, 1) 100%
+  );
+  width: 0.3rem;
+  height: 7.6em;
+  border-top-left-radius: 0.04rem;
+  border-top-right-radius: 0.16rem;
+  border-bottom-left-radius: 0.04rem;
+  border-bottom-right-radius: 0.16rem;
+}
+
+.side-button-left {
+  position: absolute;
+  top: 20rem;
+  left: -0.64rem;
+  background: linear-gradient(
+    0deg,
+    rgb(37, 37, 34) 0%,
+    rgb(77, 75, 70) 20%,
+    rgb(58, 56, 53) 49%,
+    rgb(65, 63, 59) 84%,
+    rgba(147, 144, 137, 1) 100%
+  );
+  width: 0.3rem;
+  height: 3.6em;
+  border-top-right-radius: 0.04rem;
+  border-top-left-radius: 0.16rem;
+  border-bottom-right-radius: 0.04rem;
+  border-bottom-left-radius: 0.16rem;
+}
+
+.side-button-left:after {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  background: linear-gradient(
+    0deg,
+    rgb(37, 37, 34) 0%,
+    rgb(77, 75, 70) 20%,
+    rgb(58, 56, 53) 49%,
+    rgb(65, 63, 59) 84%,
+    rgba(147, 144, 137, 1) 100%
+  );
+  width: 0.3rem;
+  height: 3.6em;
+  border-top-right-radius: 0.04rem;
+  border-top-left-radius: 0.16rem;
+  border-bottom-right-radius: 0.04rem;
+  border-bottom-left-radius: 0.16rem;
+}
+
+.side-button-left-clicker {
+  position: absolute;
+  top: 9.2rem;
+  left: -0.64rem;
+  background: linear-gradient(
+    0deg,
+    rgb(37, 37, 34) 0%,
+    rgb(77, 75, 70) 20%,
+    rgb(58, 56, 53) 49%,
+    rgb(65, 63, 59) 84%,
+    rgba(147, 144, 137, 1) 100%
+  );
+  width: 0.3rem;
+  height: 3.4em;
+  border-top-right-radius: 0.04rem;
+  border-top-left-radius: 0.16rem;
+  border-bottom-right-radius: 0.04rem;
+  border-bottom-left-radius: 0.16rem;
+}
+
+.line-vertical-l {
+  position: absolute;
+  left: 5rem;
+  background: rgb(102, 101, 101);
+  width: 0.4rem;
+  height: 53.26rem;
+  z-index: 1;
+}
+
+.line-vertical-r {
+  position: absolute;
+  right: 5rem;
+  background: rgb(102, 101, 101);
+  width: 0.4rem;
+  height: 53.26rem;
+  z-index: 1;
+}
+
+.line-horizontal-top {
+  position: absolute;
+  top: 10rem;
+  background: rgb(102, 101, 101);
+  width: 27.08rem;
+  height: 0.4rem;
+  z-index: 1;
+}
+
+.line-horizontal-bottom {
+  position: absolute;
+  top: 51rem;
+  background: rgb(102, 101, 101);
+  width: 27.08rem;
+  height: 0.4rem;
+  z-index: 1;
+}
+
+.frame-inner {
+  position: relative;
+  background: radial-gradient(
+    circle,
+    rgb(63, 60, 60) 0%,
+    rgb(117, 116, 116) 80%,
+    rgb(73, 71, 69) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.62rem;
+  width: 26.56rem;
+  height: 52.66rem;
+  z-index: 2;
+}
+
+.speaker {
+  position: absolute;
+  top: 3.37rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgb(63, 60, 60) 0%,
+    rgb(117, 116, 116) 60%,
+    rgb(85, 84, 84) 100%
+  );
+  width: 6rem;
+  height: 0.22rem;
+  z-index: 3;
+}
+
+.speaker-inner {
+  position: absolute;
+  top: 0.01rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgb(59, 59, 59) 0%,
+    rgb(39, 38, 38) 60%,
+    rgb(37, 36, 36) 80%,
+    rgb(105, 104, 104) 100%
+  );
+  width: 5.8rem;
+  height: 0.14rem;
+  z-index: 1;
+}
+
+.notch {
+  position: absolute;
+  top: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.6rem;
+  background: linear-gradient(
+    50deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(5, 5, 5, 1) 10%,
+    rgba(6, 6, 6, 1) 25%,
+    rgba(5, 5, 5, 1) 60%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  width: 8.4rem;
+  height: 2.4rem;
+  z-index: 2;
+}
+
+.lens {
+  margin-left: 6rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: linear-gradient(0deg, rgba(5, 5, 5, 1) 0%, rgba(9, 9, 9, 1) 70%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lens-inner {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(10, 10, 10, 1) 80%,
+    rgba(5, 5, 5, 0) 100%
+  );
+  border-radius: 1rem;
+}
+
+.lens-inner-reflection {
+  margin: 1px 0px 0px 2px;
+  width: 0.3rem;
+  height: 0.3rem;
+  background: radial-gradient(
+    circle,
+    rgba(90, 97, 109, 0.7) 2%,
+    rgba(61, 62, 70, 0.6) 9%,
+    rgba(81, 84, 95, 0.3) 16%,
+    rgba(51, 54, 65, 0) 77%
+  );
+  border-radius: 1rem;
+}
+
+.display-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.6rem;
+  background: linear-gradient(
+    50deg,
+    rgba(5, 5, 5, 1) 0%,
+    rgba(5, 5, 5, 1) 10%,
+    rgba(8, 8, 8, 1) 25%,
+    rgba(5, 5, 5, 1) 60%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  width: 26.4rem;
+  height: 52.56rem;
+  z-index: 1;
+}

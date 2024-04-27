@@ -24,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 3rem 0 3rem;
 }
 
 .frame-outer {
@@ -307,4 +308,15 @@ body {
   width: 26.4rem;
   height: 52.56rem;
   z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
 }

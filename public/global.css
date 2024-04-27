@@ -19,6 +19,13 @@ body {
   margin: 0;
 }
 
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .frame-outer {
   background: radial-gradient(
     circle,

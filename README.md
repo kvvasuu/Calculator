@@ -15,7 +15,7 @@ It's just a simple calculator app. It probably looks better than it works :D I g
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run serve
 
 # build for production with minification
 npm run build
